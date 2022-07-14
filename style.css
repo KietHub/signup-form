@@ -56,6 +56,14 @@ body {
 input {
     display: inline-block;
     width: 75%;
+    height: 1.2rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.3rem;
+}
+
+input:focus {
+    outline: 1px solid #3e8bff;
+    box-shadow: 1px 1px 5px #3ec2ff;
 }
 
 label {
@@ -67,6 +75,7 @@ label {
 form {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 1.2rem 0;
 }
 
 #intro-text {
@@ -78,6 +87,7 @@ form {
     color: white;
     margin: 20px 40px;
     padding: 0.8rem 2.4rem;
+    font-size: 1rem;
     border-radius: 8px;
     border: none;
     font-weight: bold;
@@ -85,4 +95,13 @@ form {
 
 #login-text {
     margin: 5px 40px;
+}
+
+.description {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+label {
+    font-size: 0.8rem;
 }
